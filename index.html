@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ember &amp; Iron — Smokehouse BBQ in Nashville, TN</title>
+  <meta name="description" content="Wood-smoked brisket, ribs, and burgers from Ember &amp; Iron — a Nashville smokehouse serving fire-forged flavor since 2011. Order online for pickup." />
+  <meta name="keywords" content="Nashville BBQ, smokehouse, brisket, ribs, smoked wings, burgers, Ember and Iron, Nashville restaurants, order online" />
+  <meta name="author" content="Ember &amp; Iron" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0d0d0f" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="google-site-verification" content="REPLACE_WITH_GSC_VERIFICATION_TOKEN" />
+  <link rel="canonical" href="https://www.emberiron.com/" />
+
+  <!-- Favicons & PWA -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant.restaurant" />
+  <meta property="og:site_name" content="Ember &amp; Iron" />
+  <meta property="og:title" content="Ember &amp; Iron — Smokehouse BBQ in Nashville, TN" />
+  <meta property="og:description" content="Wood-smoked brisket, ribs, and burgers. Fire-forged flavor in the heart of Nashville." />
+  <meta property="og:url" content="https://www.emberiron.com/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&h=630&q=80" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Slow-smoked brisket being sliced on a wooden board" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ember &amp; Iron — Smokehouse BBQ in Nashville" />
+  <meta name="twitter:description" content="Wood-smoked brisket, ribs, and burgers. Order online for pickup." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&h=630&q=80" />
+  <meta name="twitter:image:alt" content="Slow-smoked brisket being sliced on a wooden board" />
+
+  <!-- Preconnect (perf) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+
+  <!-- Preload hero LCP image -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1920&q=80" fetchpriority="high" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Structured data: Restaurant -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Ember & Iron",
+    "description": "Nashville smokehouse serving slow-smoked BBQ, grilled burgers, and cast-iron sides since 2011.",
+    "url": "https://www.emberiron.com/",
+    "logo": "https://www.emberiron.com/logo.png",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    "telephone": "+1-615-555-1234",
+    "email": "hello@emberiron.com",
+    "priceRange": "$$",
+    "servesCuisine": ["Barbecue", "American", "Smokehouse"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "418 Ironworks Blvd",
+      "addressLocality": "Nashville",
+      "addressRegion": "TN",
+      "postalCode": "37203",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 36.1627,
+      "longitude": -86.7816
+    },
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "11:00", "closes": "22:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "11:00", "closes": "23:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "23:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "21:00"}
+    ],
+    "acceptsReservations": "False",
+    "hasMenu": {"@id": "https://www.emberiron.com/#menu"},
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "482"
+    },
+    "sameAs": [
+      "https://www.facebook.com/emberiron",
+      "https://www.instagram.com/emberiron",
+      "https://www.tiktok.com/@emberiron",
+      "https://twitter.com/emberiron"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Ember & Iron",
+    "url": "https://www.emberiron.com/",
+    "inLanguage": "en-US"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.emberiron.com/#organization",
+    "name": "Ember & Iron",
+    "url": "https://www.emberiron.com/",
+    "logo": "https://www.emberiron.com/favicon.svg",
+    "email": "hello@emberiron.com",
+    "telephone": "+1-615-555-1234",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "418 Ironworks Blvd",
+      "addressLocality": "Nashville",
+      "addressRegion": "TN",
+      "postalCode": "37203",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://www.instagram.com/emberiron",
+      "https://www.facebook.com/emberiron",
+      "https://www.yelp.com/biz/ember-and-iron-nashville",
+      "https://www.tripadvisor.com/Restaurant_Review-Ember-and-Iron"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Menu",
+    "@id": "https://www.emberiron.com/#menu",
+    "name": "Ember & Iron Customer Favorites",
+    "inLanguage": "en-US",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Customer Favorites",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "12-Hour Brisket",
+            "description": "Oak-smoked overnight, hand-sliced to order, and finished with a rub we've been refining for a decade. Served with pickles, slaw, and a slice of cornbread.",
+            "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80"
+          },
+          {
+            "@type": "MenuItem",
+            "name": "St. Louis Ribs",
+            "description": "Dry-rubbed with our signature spice blend and slow-smoked low over hickory until the meat pulls clean off the bone.",
+            "image": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=700&q=80"
+          },
+          {
+            "@type": "MenuItem",
+            "name": "The Iron Burger",
+            "description": "Two hand-packed patties seared hard over open flame, stacked with smoked bacon, aged cheddar, whiskey-caramelized onions, and house sauce on a toasted brioche bun.",
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Smoked Wings",
+            "description": "Dry-rubbed, smoked for two hours, then flash-fried for that perfect crispy bite. Hot honey, bourbon BBQ, or Nashville-style dry rub.",
+            "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=80"
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Smoked Mac",
+            "description": "Three-cheese mac — sharp cheddar, smoked gouda, and parmesan — finished in the smoker with a crunchy buttered breadcrumb top.",
+            "image": "https://images.unsplash.com/photo-1543353071-087092ec393a?auto=format&fit=crop&w=700&q=80"
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Bourbon Chocolate",
+            "description": "Dense flourless chocolate cake drizzled with bourbon caramel and finished with flaky sea salt.",
+            "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=700&q=80"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-fire"></i></span>
+        Ember &amp; Iron
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="promotions.html">Promotions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a href="https://order.yourmenu.com/tommystacos" class="btn btn-primary" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> Order Online</a>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation" type="button">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="container hero-inner">
+      <h1 id="hero-heading">Fire-Forged <span class="accent">Flavor.</span></h1>
+      <p>Slow-smoked meats, wood-fired sides, ice-cold drinks. No frills, no fuss — just serious food, served fast.</p>
+      <div class="hero-actions">
+        <a href="https://order.yourmenu.com/tommystacos" class="btn btn-primary" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> Order Online</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">Scroll</div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image fade-in">
+          <img src="https://images.unsplash.com/photo-1555992336-fb0d29498b13?auto=format&fit=crop&w=900&q=80" alt="Ember &amp; Iron pitmaster tending the smoker in the open kitchen" loading="lazy" width="900" height="1125" />
+        </div>
+        <div class="about-content fade-in">
+          <h2 id="about-heading">All About Oliva &amp; Mare</h2>
+          <p>We don't play around with flavor. Every cut is brined overnight, smoked low and slow, then finished hot over open flame. Our pitmasters have been doing this for over a decade, and they still show up before sunrise.</p>
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+              <h4>Address</h4>
+              <p>418 Ironworks Blvd<br/>Nashville, TN 37203</p>
+            </div>
+            <div class="info-card">
+              <div class="icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></div>
+              <h4>Hours</h4>
+              <p>Mon–Thu: 11:00 AM – 10:00 PM<br/>Fri: 11:00 AM – 11:00 PM<br/>Sat: 12:00 PM – 11:00 PM<br/>Sun: 12:00 PM – 9:00 PM</p>
+            </div>
+            <div class="info-card">
+              <div class="icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+              <h4>Phone</h4>
+              <p><a href="tel:+16155551234">(615) 555-1234</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialties -->
+  <section id="specialties" aria-labelledby="specialties-heading">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 id="specialties-heading">Our Specialties</h2>
+        <p>Our kitchen runs on fire, iron, and stubborn pride. These are the categories we built our name on.</p>
+      </div>
+      <ul class="specialties-grid" role="list">
+        <li class="fade-in">
+          <a href="https://order.yourmenu.com/tommystacos" class="specialty-card" rel="noopener noreferrer" target="_blank">
+            <img
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+              srcset="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80 1200w"
+              sizes="(max-width: 560px) 100vw, (max-width: 960px) 50vw, 33vw"
+              alt="Sliced oak-smoked brisket plated with pickles" loading="lazy" width="800" height="1066" />
+            <div class="specialty-info">
+              <span class="number" aria-hidden="true">— 01</span>
+              <h3>Smoked BBQ</h3>
+              <p>Low-and-slow brisket, ribs, and pulled pork, served with house sauce.</p>
+            </div>
+          </a>
+        </li>
+        <li class="fade-in">
+          <a href="https://order.yourmenu.com/tommystacos" class="specialty-card" rel="noopener noreferrer" target="_blank">
+            <img
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80"
+              srcset="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=80 1200w"
+              sizes="(max-width: 560px) 100vw, (max-width: 960px) 50vw, 33vw"
+              alt="Hand-packed burger with melted cheddar on a cast iron grill" loading="lazy" width="800" height="1066" />
+            <div class="specialty-info">
+              <span class="number" aria-hidden="true">— 02</span>
+              <h3>Grilled Burgers</h3>
+              <p>Hand-packed patties, open flame, sharp cheddar, no shortcuts.</p>
+            </div>
+          </a>
+        </li>
+        <li class="fade-in">
+          <a href="https://order.yourmenu.com/tommystacos" class="specialty-card" rel="noopener noreferrer" target="_blank">
+            <img
+              src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80"
+              srcset="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=80 1200w"
+              sizes="(max-width: 560px) 100vw, (max-width: 960px) 50vw, 33vw"
+              alt="Cast iron skillet of smoked macaroni and cheese with crisp top" loading="lazy" width="800" height="1066" />
+            <div class="specialty-info">
+              <span class="number" aria-hidden="true">— 03</span>
+              <h3>Cast Iron Sides</h3>
+              <p>Skillet-crisped potatoes, charred corn, smoked mac &amp; cheese.</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Favorites -->
+  <section class="favorites" aria-labelledby="favorites-heading">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 id="favorites-heading">Our Favorites</h2>
+        <p>Our six most-ordered dishes, straight from the smokestack.</p>
+      </div>
+      <ul class="favorites-grid" role="list">
+        <li class="fade-in">
+          <a href="https://order.yourmenu.com/tommystacos" class="favorite-card" rel="noopener noreferrer" target="_blank">
+            <div class="favorite-img"><img
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80"
+              srcset="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80 700w, https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80 1000w"
+              sizes="(max-width: 560px) 100vw, (max-width: 960px) 50vw, 33vw"
+              alt="12-hour oak-smoked brisket plate with pickles and slaw" loading="lazy" width="700" height="525" /></div>
+            <div class="favorite-body">
+              <h3>12-Hour Brisket</h3>
+              <p>Oak-smoked overnight, hand-sliced to order, and finished with a rub we've been refining for a decade. Served with pickles, slaw, and a slice of cornbread.</p>
+            </div>
+          </a>
+        </li>
+        <li class="fade-in">
+          <a href="https://order.yourmenu.com/tommystacos" class="favorite-card" rel="noopener noreferrer" target="_blank">
+            <div class="favorite-img"><img
+              src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=700&q=80"
+              srcset="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=700&q=80 700w, https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1000&q=80 1000w"
+              sizes="(max-width: 560px) 100vw, (max-width: 960px) 50vw, 33vw"
+              alt="Dry-rubbed St. Louis style ribs on butcher paper" loading="lazy" width="700" height="525" /></div>
+            <div class="favorite-body">
+              <h3>St. Louis Ribs</h3>
+              <p>Dry-rubbed with our signature spice blend and slow-smoked low over hickory until the meat pulls clean off the bone. No sauce needed — but we won't stop you.</p>
+            </div>
+          </a>
+        </li>
+        <li class="fade-in">
+          <a href="https://order.yourmenu.com/tommystacos" class="favorite-card" rel="noopener noreferrer" target="_blank">
+            <div class="favorite-img"><img
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+              srcset="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80 700w, https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80 1000w"
+              sizes="(max-width: 560px) 100vw, (max-width: 960px) 50vw, 33vw"
+              alt="The Iron Burger: double patty with bacon and cheddar on a brioche bun" loading="lazy" width="700" height="525" /></div>
+            <div class="favorite-body">
+              <h3>The Iron Burger</h3>
+              <p>Two hand-packed patties seared hard over open flame, stacked with smoked bacon, aged cheddar, whiskey-caramelized onions, and house sauce on a toasted brioche bun.</p>
+            </div>
+          </a>
+        </li>
+        <li class="fade-in">
+          <a href="https://order.yourmenu.com/tommystacos" class="favorite-card" rel="noopener noreferrer" target="_blank">
+            <div class="favorite-img"><img
+              src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=80"
+              srcset="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=80 700w, https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1000&q=80 1000w"
+              sizes="(max-width: 560px) 100vw, (max-width: 960px) 50vw, 33vw"
+              alt="Smoked wings tossed in hot honey glaze" loading="lazy" width="700" height="525" /></div>
+            <div class="favorite-body">
+              <h3>Smoked Wings</h3>
+              <p>Dry-rubbed, smoked for two hours, then flash-fried for that perfect crispy bite. Choose your heat: hot honey, bourbon BBQ, or Nashville-style dry rub.</p>
+            </div>
+          </a>
+        </li>
+        <li class="fade-in">
+          <a href="https://order.yourmenu.com/tommystacos" class="favorite-card" rel="noopener noreferrer" target="_blank">
+            <div class="favorite-img"><img
+              src="https://images.unsplash.com/photo-1543353071-087092ec393a?auto=format&fit=crop&w=700&q=80"
+              srcset="https://images.unsplash.com/photo-1543353071-087092ec393a?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1543353071-087092ec393a?auto=format&fit=crop&w=700&q=80 700w, https://images.unsplash.com/photo-1543353071-087092ec393a?auto=format&fit=crop&w=1000&q=80 1000w"
+              sizes="(max-width: 560px) 100vw, (max-width: 960px) 50vw, 33vw"
+              alt="Smoked mac and cheese in a cast iron skillet with crispy breadcrumb top" loading="lazy" width="700" height="525" /></div>
+            <div class="favorite-body">
+              <h3>Smoked Mac</h3>
+              <p>Three-cheese mac — sharp cheddar, smoked gouda, and parmesan — finished in the smoker with a crunchy buttered breadcrumb top. Comfort food with a backbone.</p>
+            </div>
+          </a>
+        </li>
+        <li class="fade-in">
+          <a href="https://order.yourmenu.com/tommystacos" class="favorite-card" rel="noopener noreferrer" target="_blank">
+            <div class="favorite-img"><img
+              src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=700&q=80"
+              srcset="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=700&q=80 700w, https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1000&q=80 1000w"
+              sizes="(max-width: 560px) 100vw, (max-width: 960px) 50vw, 33vw"
+              alt="Slice of bourbon chocolate cake with caramel drizzle" loading="lazy" width="700" height="525" /></div>
+            <div class="favorite-body">
+              <h3>Bourbon Chocolate</h3>
+              <p>Dense flourless chocolate cake drizzled with bourbon caramel and finished with flaky sea salt. Rich, boozy, and just the right amount of sweet to close out the meal.</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews" aria-labelledby="reviews-heading">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 id="reviews-heading">What Folks Are Saying</h2>
+      </div>
+      <div class="slider fade-in" role="region" aria-roledescription="carousel" aria-label="Customer reviews">
+        <div class="slider-track" id="reviews-slider-track" aria-live="polite">
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="Review 1 of 4">
+            <div class="review-stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div>
+            <p class="review-text">The brisket melts. The ribs fall apart. The atmosphere is exactly what you want — dim, loud, and smelling like smoke. My new spot.</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar" aria-hidden="true">RM</div>
+              <div>
+                <div class="reviewer-name">Ryan M.</div>
+              </div>
+            </div>
+          </article>
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="Review 2 of 4">
+            <div class="review-stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div>
+            <p class="review-text">No pretension, no filler, just great food cooked by people who actually give a damn. The Iron Burger ruined every other burger for me.</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar" aria-hidden="true">TD</div>
+              <div>
+                <div class="reviewer-name">Taylor D.</div>
+              </div>
+            </div>
+          </article>
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="Review 3 of 4">
+            <div class="review-stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div>
+            <p class="review-text">Fast, friendly, and the smoked mac is genuinely life-changing. Ordered online — ready on time, still hot when I got home.</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar" aria-hidden="true">AK</div>
+              <div>
+                <div class="reviewer-name">Alicia K.</div>
+              </div>
+            </div>
+          </article>
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="Review 4 of 4">
+            <div class="review-stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div>
+            <p class="review-text">Best wings in the state. Smoky, crispy, and that hot honey is dangerous. Already coming back tomorrow.</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar" aria-hidden="true">JC</div>
+              <div>
+                <div class="reviewer-name">Jamal C.</div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn slider-prev" aria-label="Previous review" aria-controls="reviews-slider-track" type="button"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+          <button class="slider-pause" aria-label="Pause auto-rotating reviews" aria-controls="reviews-slider-track" aria-pressed="false" type="button"><i class="fa-solid fa-pause" aria-hidden="true"></i></button>
+          <button class="slider-btn slider-next" aria-label="Next review" aria-controls="reviews-slider-track" type="button"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+        <div class="slider-dots" role="tablist" aria-label="Choose a review"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Order -->
+  <section class="cta-order" aria-labelledby="cta-order-heading">
+    <div class="container">
+      <h2 id="cta-order-heading">Skip the Line. <span class="accent">Order Online.</span></h2>
+      <p>Your food, fire-hot and ready for pickup in under 15 minutes. No apps, no accounts, no nonsense.</p>
+      <a href="https://order.yourmenu.com/tommystacos" class="btn btn-primary" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> Start Your Order</a>
+    </div>
+  </section>
+
+  <!-- CTA Social -->
+  <section class="cta-social" aria-labelledby="social-heading">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="social-heading">Follow Ember &amp; Iron</h2>
+      </div>
+      <ul class="social-icons" role="list" aria-label="Ember and Iron on social media and review sites">
+        <li><a href="https://www.instagram.com/emberiron" class="social-icon" aria-label="Ember and Iron on Instagram" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.facebook.com/emberiron" class="social-icon" aria-label="Ember and Iron on Facebook" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.google.com/maps/place/Ember+and+Iron" class="social-icon" aria-label="Ember and Iron on Google" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-google" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.yelp.com/biz/ember-and-iron-nashville" class="social-icon" aria-label="Ember and Iron on Yelp" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-yelp" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.tripadvisor.com/Restaurant_Review-Ember-and-Iron" class="social-icon" aria-label="Ember and Iron on TripAdvisor" rel="noopener noreferrer" target="_blank"><svg class="social-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 16" width="22" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 12.5A4.5 4.5 0 1 1 8 3.5a4.5 4.5 0 0 1 0 9zm16-12.5a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 12.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/><circle cx="8" cy="8" r="2"/><circle cx="24" cy="8" r="2"/></svg></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Subscribe -->
+  <section class="signup subscribe" aria-labelledby="subscribe-heading">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 id="subscribe-heading" class="subscribe-title">Get Access to Discounts, Deals, &amp; More</h2>
+        <p>Stay up-to-date with deals and promotions at Ember &amp; Iron! Sign up below and we’ll keep you in the loop with discounts on your favorite items.</p>
+      </div>
+      <form class="signup-form fade-in" aria-labelledby="subscribe-heading" novalidate>
+        <p class="sr-only">Fields marked as required must be filled in.</p>
+        <div class="signup-row">
+          <div class="field">
+            <label for="sub-firstName">First Name <span aria-hidden="true">*</span></label>
+            <input id="sub-firstName" type="text" name="firstName" placeholder="First Name" autocomplete="given-name" required aria-required="true" />
+          </div>
+          <div class="field">
+            <label for="sub-lastName">Last Name <span aria-hidden="true">*</span></label>
+            <input id="sub-lastName" type="text" name="lastName" placeholder="Last Name" autocomplete="family-name" required aria-required="true" />
+          </div>
+        </div>
+        <div class="signup-row">
+          <div class="field">
+            <label for="sub-email">Email Address <span aria-hidden="true">*</span></label>
+            <input id="sub-email" type="email" name="email" placeholder="your@email.com" autocomplete="email" required aria-required="true" />
+          </div>
+          <div class="field">
+            <label for="sub-phone">Phone Number <span aria-hidden="true">*</span></label>
+            <input id="sub-phone" type="tel" name="phone" placeholder="(555) 123-4567" autocomplete="tel" required aria-required="true" />
+          </div>
+        </div>
+        <label class="consent-check" for="sub-marketingConsent">
+          <input id="sub-marketingConsent" type="checkbox" name="marketingConsent" required aria-required="true" />
+          <span>I agree to receive marketing emails, texts, and promotional messages from Ember &amp; Iron. Message and data rates may apply. Unsubscribe anytime.</span>
+        </label>
+        <button type="submit" class="btn btn-primary">Sign Me Up</button>
+        <p class="form-msg" role="status" aria-live="polite">No spam. Unsubscribe anytime.</p>
+      </form>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-fire"></i></span>
+            Ember &amp; Iron
+          </a>
+          <p>Smoked meats, wood-fired sides, cold drinks. Serving Nashville since 2011 with stubborn pride and great fire.</p>
+          <ul class="footer-social" role="list" aria-label="Follow Ember and Iron">
+            <li><a href="https://www.instagram.com/emberiron" aria-label="Ember and Iron on Instagram" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.facebook.com/emberiron" aria-label="Ember and Iron on Facebook" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.google.com/maps/place/Ember+and+Iron" aria-label="Ember and Iron on Google" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-google" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.yelp.com/biz/ember-and-iron-nashville" aria-label="Ember and Iron on Yelp" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-yelp" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.tripadvisor.com/Restaurant_Review-Ember-and-Iron" aria-label="Ember and Iron on TripAdvisor" rel="noopener noreferrer" target="_blank"><svg class="social-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 16" width="22" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 12.5A4.5 4.5 0 1 1 8 3.5a4.5 4.5 0 0 1 0 9zm16-12.5a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 12.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/><circle cx="8" cy="8" r="2"/><circle cx="24" cy="8" r="2"/></svg></a></li>
+          </ul>
+        </div>
+        <nav class="footer-col" aria-labelledby="footer-explore">
+          <h4 id="footer-explore">Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="promotions.html">Promotions</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h4 id="footer-visit">Visit</h4>
+          <address aria-labelledby="footer-visit">
+            418 Ironworks Blvd<br/>
+            Nashville, TN 37203<br/>
+            <a href="tel:+16155551234">(615) 555-1234</a><br/>
+            <a href="mailto:hello@emberiron.com">hello@emberiron.com</a>
+          </address>
+        </div>
+        <nav class="footer-col" aria-labelledby="footer-legal">
+          <h4 id="footer-legal">Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Ember &amp; Iron. All rights reserved.</span>
+        <a href="https://yourmenu.com/" class="footer-credit" rel="noopener noreferrer" target="_blank">Made with <i class="fa-solid fa-heart icon-heart" aria-hidden="true"></i><span class="sr-only">love</span> by YourMenu™</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner" role="region" aria-label="Cookie consent">
+    <div class="cookie-inner">
+      <p><strong>Cookies</strong>We use cookies to improve your experience, analyze traffic, and serve tailored content. <a href="cookies.html">Learn more</a>.</p>
+      <div class="cookie-actions">
+        <button class="btn btn-text" data-consent="declined" type="button">Decline</button>
+        <button class="btn btn-primary" data-consent="accepted" type="button">Accept All</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

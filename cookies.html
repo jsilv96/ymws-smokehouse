@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookie Policy — Ember &amp; Iron</title>
+  <meta name="description" content="How Ember &amp; Iron uses cookies and how to manage your cookie preferences." />
+  <meta name="author" content="Ember &amp; Iron" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0d0d0f" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="google-site-verification" content="REPLACE_WITH_GSC_VERIFICATION_TOKEN" />
+  <link rel="canonical" href="https://www.emberiron.com/cookies.html" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ember &amp; Iron" />
+  <meta property="og:title" content="Cookie Policy — Ember &amp; Iron" />
+  <meta property="og:description" content="How we use cookies and how you can manage your preferences." />
+  <meta property="og:url" content="https://www.emberiron.com/cookies.html" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .cookie-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 2rem;
+      font-size: 0.9rem;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+    }
+    .cookie-table th,
+    .cookie-table td {
+      text-align: left;
+      padding: 1rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .cookie-table th {
+      background: var(--color-surface-2);
+      color: var(--color-primary);
+      font-family: var(--font-body);
+      font-weight: 700;
+      letter-spacing: 2px;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+    }
+    .cookie-table td { color: var(--color-text-dim); }
+    .cookie-table td strong { color: #fff; }
+    .cookie-table tr:last-child td { border-bottom: 0; }
+    .consent-panel {
+      background: var(--color-surface);
+      padding: 2.25rem;
+      border: 1px solid var(--color-border);
+      margin: 2rem 0;
+      min-inline-size: 0;
+    }
+    .consent-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--color-border);
+      gap: 1rem;
+    }
+    .consent-row:last-of-type { border-bottom: 0; }
+    .consent-row h4 {
+      margin-bottom: 0.25rem;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    .consent-row p { color: var(--color-muted); margin: 0; font-size: 0.85rem; }
+    .switch {
+      position: relative;
+      width: 48px;
+      height: 26px;
+      flex-shrink: 0;
+    }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider-track-ui {
+      position: absolute;
+      cursor: pointer;
+      inset: 0;
+      background: var(--color-border);
+      transition: 0.3s;
+    }
+    .slider-track-ui::before {
+      content: "";
+      position: absolute;
+      height: 18px; width: 18px;
+      left: 3px; top: 3px;
+      background: #fff;
+      transition: 0.3s;
+    }
+    .switch input:checked + .slider-track-ui { background: var(--color-primary); }
+    .switch input:checked + .slider-track-ui::before { transform: translateX(22px); background: var(--color-bg); }
+    .switch input:disabled + .slider-track-ui { background: var(--color-primary); opacity: 0.6; cursor: not-allowed; }
+    .consent-actions {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-top: 1.75rem;
+      justify-content: flex-end;
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.emberiron.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Cookie Policy", "item": "https://www.emberiron.com/cookies.html"}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-fire"></i></span>
+        Ember &amp; Iron
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="promotions.html">Promotions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a href="https://order.yourmenu.com/tommystacos" class="btn btn-primary" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> Order Online</a>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation" type="button">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+
+  <section class="page-hero" aria-labelledby="page-heading">
+    <div class="container">
+      <h1 id="page-heading">Cookie Policy</h1>
+      <p>What cookies we use and how to manage your preferences.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Cookie Policy</span>
+      </nav>
+    </div>
+  </section>
+
+  <section aria-labelledby="page-heading">
+    <div class="container">
+      <article class="text-page">
+        <p class="updated"><time datetime="2026-04-01">Last updated: April 1, 2026</time></p>
+
+        <p>This Cookie Policy explains how Ember &amp; Iron uses cookies and similar technologies when you visit our website. It also describes how you can control and adjust your preferences.</p>
+
+        <h2>1. What Are Cookies?</h2>
+        <p>Cookies are small text files placed on your device when you visit a website. They help the site remember your preferences, keep you signed in, and understand how visitors interact with the site. Similar technologies like pixels and local storage work in comparable ways.</p>
+
+        <h2>2. Types of Cookies We Use</h2>
+        <table class="cookie-table">
+          <caption class="sr-only">Categories of cookies used on this site, their purpose, and examples</caption>
+          <thead>
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Purpose</th>
+              <th scope="col">Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Essential</strong></td>
+              <td>Required for the site to function — logging in, cart, checkout.</td>
+              <td>session_id, cart_token</td>
+            </tr>
+            <tr>
+              <td><strong>Preferences</strong></td>
+              <td>Remember your location, language, and cookie consent choices.</td>
+              <td>ei_cookie_consent, locale</td>
+            </tr>
+            <tr>
+              <td><strong>Analytics</strong></td>
+              <td>Help us understand traffic, popular pages, and how people use the site.</td>
+              <td>Google Analytics (_ga)</td>
+            </tr>
+            <tr>
+              <td><strong>Marketing</strong></td>
+              <td>Serve relevant promotions and measure ad performance.</td>
+              <td>Meta Pixel, Google Ads</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>3. Manage Your Preferences</h2>
+        <p>Use the controls below to set your cookie preferences. Essential cookies cannot be disabled because the site will not function without them.</p>
+
+        <fieldset class="consent-panel">
+          <legend class="sr-only">Manage your cookie preferences</legend>
+          <div class="consent-row">
+            <div>
+              <h4 id="essential-label">Essential Cookies</h4>
+              <p id="essential-desc">Necessary for core site features. Always on.</p>
+            </div>
+            <label class="switch">
+              <span class="sr-only">Essential cookies (required, cannot be disabled)</span>
+              <input type="checkbox" checked disabled aria-labelledby="essential-label" aria-describedby="essential-desc" />
+              <span class="slider-track-ui" aria-hidden="true"></span>
+            </label>
+          </div>
+          <div class="consent-row">
+            <div>
+              <h4 id="prefs-label">Preference Cookies</h4>
+              <p id="prefs-desc">Remember your choices like language and location.</p>
+            </div>
+            <label class="switch">
+              <span class="sr-only">Preference cookies toggle</span>
+              <input type="checkbox" data-cookie="preferences" checked aria-labelledby="prefs-label" aria-describedby="prefs-desc" />
+              <span class="slider-track-ui" aria-hidden="true"></span>
+            </label>
+          </div>
+          <div class="consent-row">
+            <div>
+              <h4 id="analytics-label">Analytics Cookies</h4>
+              <p id="analytics-desc">Help us understand how you use our website.</p>
+            </div>
+            <label class="switch">
+              <span class="sr-only">Analytics cookies toggle</span>
+              <input type="checkbox" data-cookie="analytics" aria-labelledby="analytics-label" aria-describedby="analytics-desc" />
+              <span class="slider-track-ui" aria-hidden="true"></span>
+            </label>
+          </div>
+          <div class="consent-row">
+            <div>
+              <h4 id="marketing-label">Marketing Cookies</h4>
+              <p id="marketing-desc">Serve personalized promotions across other websites.</p>
+            </div>
+            <label class="switch">
+              <span class="sr-only">Marketing cookies toggle</span>
+              <input type="checkbox" data-cookie="marketing" aria-labelledby="marketing-label" aria-describedby="marketing-desc" />
+              <span class="slider-track-ui" aria-hidden="true"></span>
+            </label>
+          </div>
+          <div class="consent-actions">
+            <button class="btn btn-text" id="rejectAll" type="button">Reject All</button>
+            <button class="btn btn-outline" id="savePrefs" type="button">Save Preferences</button>
+            <button class="btn btn-primary" id="acceptAll" type="button">Accept All</button>
+          </div>
+        </fieldset>
+
+        <h2>4. Third-Party Cookies</h2>
+        <p>Some of the cookies we use are placed by third parties, such as analytics and advertising partners. These parties have their own privacy policies that govern how they handle the data they collect.</p>
+
+        <h2>5. Browser Controls</h2>
+        <p>You can also manage cookies directly in your browser settings. Most browsers let you block or delete cookies. Keep in mind that disabling essential cookies may affect how the site works. Instructions are available for:</p>
+        <ul>
+          <li>Chrome, Safari, Firefox, and Edge — check your browser's Help menu.</li>
+          <li>Mobile browsers — settings available in the browser app.</li>
+        </ul>
+
+        <h2>6. Do Not Track</h2>
+        <p>Some browsers transmit a "Do Not Track" signal. Because there is no industry standard for how to respond to these signals, we currently do not alter our practices based on them. You can still manage your preferences using the controls above.</p>
+
+        <h2>7. Changes to This Policy</h2>
+        <p>We may update this Cookie Policy from time to time. When we do, we'll post the new version on this page and update the "Last updated" date above.</p>
+
+        <h2>8. Contact Us</h2>
+        <p>Questions about cookies? Reach out at <a href="mailto:privacy@emberiron.com">privacy@emberiron.com</a> or <a href="tel:+16155551234">(615) 555-1234</a>.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Subscribe -->
+  <section class="signup subscribe" aria-labelledby="subscribe-heading">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 id="subscribe-heading" class="subscribe-title">Get Access to Discounts, Deals, &amp; More</h2>
+        <p>Stay up-to-date with deals and promotions at Ember &amp; Iron! Sign up below and we’ll keep you in the loop with discounts on your favorite items.</p>
+      </div>
+      <form class="signup-form fade-in" aria-labelledby="subscribe-heading" novalidate>
+        <p class="sr-only">Fields marked as required must be filled in.</p>
+        <div class="signup-row">
+          <div class="field">
+            <label for="sub-firstName">First Name <span aria-hidden="true">*</span></label>
+            <input id="sub-firstName" type="text" name="firstName" placeholder="First Name" autocomplete="given-name" required aria-required="true" />
+          </div>
+          <div class="field">
+            <label for="sub-lastName">Last Name <span aria-hidden="true">*</span></label>
+            <input id="sub-lastName" type="text" name="lastName" placeholder="Last Name" autocomplete="family-name" required aria-required="true" />
+          </div>
+        </div>
+        <div class="signup-row">
+          <div class="field">
+            <label for="sub-email">Email Address <span aria-hidden="true">*</span></label>
+            <input id="sub-email" type="email" name="email" placeholder="your@email.com" autocomplete="email" required aria-required="true" />
+          </div>
+          <div class="field">
+            <label for="sub-phone">Phone Number <span aria-hidden="true">*</span></label>
+            <input id="sub-phone" type="tel" name="phone" placeholder="(555) 123-4567" autocomplete="tel" required aria-required="true" />
+          </div>
+        </div>
+        <label class="consent-check" for="sub-marketingConsent">
+          <input id="sub-marketingConsent" type="checkbox" name="marketingConsent" required aria-required="true" />
+          <span>I agree to receive marketing emails, texts, and promotional messages from Ember &amp; Iron. Message and data rates may apply. Unsubscribe anytime.</span>
+        </label>
+        <button type="submit" class="btn btn-primary">Sign Me Up</button>
+        <p class="form-msg" role="status" aria-live="polite">No spam. Unsubscribe anytime.</p>
+      </form>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-fire"></i></span>
+            Ember &amp; Iron
+          </a>
+          <p>Smoked meats, wood-fired sides, cold drinks. Serving Nashville since 2011 with stubborn pride and great fire.</p>
+          <ul class="footer-social" role="list" aria-label="Follow Ember and Iron">
+            <li><a href="https://www.instagram.com/emberiron" aria-label="Ember and Iron on Instagram" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.facebook.com/emberiron" aria-label="Ember and Iron on Facebook" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.google.com/maps/place/Ember+and+Iron" aria-label="Ember and Iron on Google" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-google" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.yelp.com/biz/ember-and-iron-nashville" aria-label="Ember and Iron on Yelp" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-yelp" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.tripadvisor.com/Restaurant_Review-Ember-and-Iron" aria-label="Ember and Iron on TripAdvisor" rel="noopener noreferrer" target="_blank"><svg class="social-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 16" width="22" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 12.5A4.5 4.5 0 1 1 8 3.5a4.5 4.5 0 0 1 0 9zm16-12.5a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 12.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/><circle cx="8" cy="8" r="2"/><circle cx="24" cy="8" r="2"/></svg></a></li>
+          </ul>
+        </div>
+        <nav class="footer-col" aria-labelledby="footer-explore">
+          <h4 id="footer-explore">Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="promotions.html">Promotions</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h4 id="footer-visit">Visit</h4>
+          <address aria-labelledby="footer-visit">
+            418 Ironworks Blvd<br/>
+            Nashville, TN 37203<br/>
+            <a href="tel:+16155551234">(615) 555-1234</a><br/>
+            <a href="mailto:hello@emberiron.com">hello@emberiron.com</a>
+          </address>
+        </div>
+        <nav class="footer-col" aria-labelledby="footer-legal">
+          <h4 id="footer-legal">Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Ember &amp; Iron. All rights reserved.</span>
+        <a href="https://yourmenu.com/" class="footer-credit" rel="noopener noreferrer" target="_blank">Made with <i class="fa-solid fa-heart icon-heart" aria-hidden="true"></i><span class="sr-only">love</span> by YourMenu™</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" role="region" aria-label="Cookie consent">
+    <div class="cookie-inner">
+      <p><strong>Cookies</strong>We use cookies to improve your experience, analyze traffic, and serve tailored content. <a href="cookies.html">Learn more</a>.</p>
+      <div class="cookie-actions">
+        <button class="btn btn-text" data-consent="declined" type="button">Decline</button>
+        <button class="btn btn-primary" data-consent="accepted" type="button">Accept All</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    const toggles = document.querySelectorAll('[data-cookie]');
+    const KEY = 'ei_cookie_prefs';
+    const stored = JSON.parse(localStorage.getItem(KEY) || '{}');
+    toggles.forEach(t => {
+      if (stored[t.dataset.cookie] !== undefined) t.checked = stored[t.dataset.cookie];
+    });
+    const save = (prefs) => {
+      localStorage.setItem(KEY, JSON.stringify(prefs));
+      localStorage.setItem('ei_cookie_consent', 'custom');
+      alert('Your cookie preferences have been saved.');
+    };
+    document.getElementById('savePrefs').addEventListener('click', () => {
+      const prefs = {};
+      toggles.forEach(t => (prefs[t.dataset.cookie] = t.checked));
+      save(prefs);
+    });
+    document.getElementById('acceptAll').addEventListener('click', () => {
+      toggles.forEach(t => (t.checked = true));
+      save({ preferences: true, analytics: true, marketing: true });
+    });
+    document.getElementById('rejectAll').addEventListener('click', () => {
+      toggles.forEach(t => (t.checked = false));
+      save({ preferences: false, analytics: false, marketing: false });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — Ember &amp; Iron</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Find your way back to Ember &amp; Iron's Nashville smokehouse." />
+  <meta name="author" content="Ember &amp; Iron" />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#0d0d0f" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="canonical" href="https://www.emberiron.com/404.html" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    .not-found {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 1.5rem;
+      background: linear-gradient(135deg, rgba(10,10,12,0.85), rgba(10,10,12,0.55)),
+                  url("https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+    }
+    .not-found .code {
+      font-family: var(--font-heading);
+      font-size: clamp(6rem, 18vw, 14rem);
+      color: var(--color-primary);
+      line-height: 1;
+      letter-spacing: 4px;
+      margin-bottom: 1rem;
+    }
+    .not-found h1 { color: #fff; margin-bottom: 1rem; }
+    .not-found p { color: var(--color-text-dim); max-width: 520px; margin: 0 auto 2rem; }
+    .not-found-links {
+      display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-fire"></i></span>
+        Ember &amp; Iron
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="promotions.html">Promotions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a href="https://order.yourmenu.com/tommystacos" class="btn btn-primary" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> Order Online</a>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation" type="button">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <section class="not-found" aria-labelledby="page-heading">
+      <span class="code" aria-hidden="true">404</span>
+      <h1 id="page-heading">Page Not Found</h1>
+      <p>Looks like this page got lost in the smoke. Don't worry — there's plenty more to chew on. Try one of these instead:</p>
+      <div class="not-found-links">
+        <a href="index.html" class="btn btn-primary">Back to Home</a>
+        <a href="promotions.html" class="btn btn-outline">See Current Deals</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Ember &amp; Iron. All rights reserved.</span>
+        <a href="https://yourmenu.com/" class="footer-credit" rel="noopener noreferrer" target="_blank">Made with <i class="fa-solid fa-heart icon-heart" aria-hidden="true"></i><span class="sr-only">love</span> by YourMenu™</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

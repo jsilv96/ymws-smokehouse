@@ -1,0 +1,12 @@
+# robots.txt for Ember & Iron
+# https://www.emberiron.com/
+
+User-agent: *
+Allow: /
+
+# Disallow search-like and thank-you pages that have no SEO value
+Disallow: /search
+Disallow: /thank-you
+Disallow: /404.html
+
+Sitemap: https://www.emberiron.com/sitemap.xml

@@ -1,0 +1,31 @@
+{
+  "name": "Ember & Iron",
+  "short_name": "Ember & Iron",
+  "description": "Wood-smoked brisket, ribs, and burgers from Ember & Iron — a Nashville smokehouse serving fire-forged flavor since 2011.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0d0d0f",
+  "theme_color": "#0d0d0f",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
